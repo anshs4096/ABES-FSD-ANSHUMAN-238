@@ -8,16 +8,86 @@
  address
  submit and reset details -->
 
- <!DOCTYPE html>
- <html lang="en">
- <head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Registration Form</title>
- </head>
- <body>
-    <h1>Full Name</h1>
-    <br/>
-    <p>Email</p>
- </body>
- </html>
+    <title>Registration form</title>
+</head>
+<body>
+    <header><ins> Students Details</ins></header>
+    <br>
+    <hr>
+    <p> Fill your details:</p>
+    <br><br>
+    <form>
+        <table border="1" width="80%" cellpadding="10" cellspacing="0">
+            <tr>
+        <td>Full Name:</td>
+       <td> <input type="text" name="Full Name" placeholder="your name..." required></td>
+       </tr>
+        <tr>
+        <td><label for="email"> Email :</label></td>
+       <td> <input for="email" id="email" name="email" placeholder="email..."></td>
+        </tr>
+        <tr>
+        <td><label for="password"> Password</label></td>
+        <td><input type="password" id="password" name="password" placeholder="password"></td>
+        </tr>
+        <tr>
+        <td><label for="confirm password">Confirm Password</label></td>
+        <td><input type="password" id="confirm password" name="confirm password" placeholder="confirm password"></td>
+      </tr>
+      <tr>
+        <td> Gender</td>
+       <td> <input type="radio" name="gender" id="option-1"> 
+         <label for="option-1"> male</label>  
+         <br>   
+        <input type="radio" name="gender"  id="option-2" >
+        <label for="option-2"> female</label> 
+        <br>
+        <input type="radio" name="gender"  id="option-3">
+        <label for="option-3"> prefer not to say</label>
+    </td>
+      </tr>
+      <tr>
+        <td> Hobbies</td>
+        <td> 
+            <input type="checkbox" name="Hobbies" id="option-1">
+            <label for="option-1">Gaming</label>
+            <br>
+            <input type="checkbox" name="Hobbies" id="option-2">
+            <label for="option-2">Singing</label>
+            <br>
+            <input type="checkbox" name="Hobbies" id="option-3">
+            <label for="option-3">Dancing</label>
+            <br>
+            <input type="checkbox" name="Hobbies" id="option-4">
+            <label for="option-4">Listening music</label>
+
+        </td>
+      </tr>
+      <tr>
+        <td> Course select</td>
+        <td>
+            <label for="qustion">courses</label>
+            <select name="question" id="question">
+                <option value="q1">B.tech</option>
+                <option value="q2">BSC</option>
+                <option value="q3">BCOM</option>
+                
+            </select>
+        </td>
+      </tr>
+      <tr>
+        <td> Address :</td>
+        <td>  <textarea name="address" id="address" cols="30" rows="10" placeholder="address"></textarea>
+</td>
+      </tr>
+        </table>
+        <input type="submit" value="submit the data">
+        <input type="reset" value="reset the form">
+    </form>
+</body>
+</html>
